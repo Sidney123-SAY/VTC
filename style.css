@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1c1c1c;
+  color: white;
+  padding: 10px 30px;
+}
+
+.logo {
+  font-family: Georgia, serif;
+  font-weight: bold;
+  font-size: 24px;
+  background: #f5d77a;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav a, .right-menu a, .lang {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  background: #3b3b3b;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.signup {
+  background: #f5d77a;
+  color: #000;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.text-block {
+  max-width: 50%;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.reserve {
+  margin-top: 20px;
+  background: #f5d77a;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.reasons {
+  margin-top: 60px;
+  border: 2px dashed #f5d77a;
+  padding: 15px;
+  width: fit-content;
+  background: #fffaf0;
+}
+
+.image-block img {
+  width: 400px;
+  height: auto;
+}
+
