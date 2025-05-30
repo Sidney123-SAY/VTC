@@ -1,0 +1,91 @@
+body { 
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ background: #f4f4f4;
+
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1c1c1c;
+  color: white;
+  padding: 10px 30px;
+}
+
+.logo {
+  font-family: Georgia, serif;
+  font-weight: bold;
+  font-size: 24px;
+  background: #f5d77a;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background: white;
+    max-width: 1200px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+form input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+
+form button {
+    background-color: #f1c40f;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.left {
+  flex: 1;
+  padding: 20px;
+}
+
+.left h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+
+
+
+.right{
+    flex: 1;
+    text-align:right;
+}
+
+.right img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+explore {
+ font-size: 1em;
+ margin-bottom: 20px;
+ color: #555;
+}
