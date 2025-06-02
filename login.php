@@ -20,19 +20,12 @@
             </p>
             <form action="login.php" method="POST">
                 <input type="text" name="identifiant" placeholder="Numéro ou E-mail" required>
+                <input type="text" name="identifiant" placeholder="Mot de passe" required>
                 <button type="submit" class="btn primary">Connexion</button>
             </form>
 
-            <div class="separator">
-                <span>OU</span>
-            </div>
+            
+            
 
-            <button class="btn google">
-                <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google logo">
-            </button>
-
-            <button class="btn apple">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple logo">
-            </button>
+            
         </div>
-    </div>

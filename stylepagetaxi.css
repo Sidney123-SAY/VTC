@@ -1,7 +1,7 @@
 body { 
  font-family: Arial, sans-serif;
- margin: 0;
- padding: 0;
+ margin: 10px;
+ padding: 10px;
  background: #f4f4f4;
 
 }
@@ -29,7 +29,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
+    padding: 40px;
     background: white;
     max-width: 1200px;
     margin: auto;
@@ -39,7 +39,7 @@ header {
 
 form input {
   display: block;
-  width: 100%;
+  width: 50%;
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
@@ -48,20 +48,32 @@ form input {
 
 
 
-form button {
-    background-color: #f1c40f;
-    color: black;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
+
+form input {
+ display: block;
+ width: 50%;
+ padding: 12px;
+ margin-bottom: 20px;
+ border: 1px solid #ccc;
+ border-radius: 6px;
+ font-size: 16px;
 }
 
 
+.voir-prix {
+  background-color: #f1c40f;
+  color: #000;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+
+
 .left {
-  flex: 1;
-  padding: 20px;
+  flex: 1px;
+  max-width: 500px;
 }
 
 .left h1 {
@@ -89,3 +101,9 @@ explore {
  margin-bottom: 20px;
  color: #555;
 }
+
+.image-block img{
+  width: 400px;
+  height: auto;
+}
+

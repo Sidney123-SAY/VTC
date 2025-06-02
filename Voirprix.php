@@ -1,24 +1,30 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voirprix</title>
-    <link rel="stylesheet" href="styleVoirprix.css">
+    <title>Commande de Taxi</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <header>
-    <button class="logo">ASIH</button>
-    <a href="Accueil.php"><->Retour</button>
-</header>
+        <div class="logo">ASIH</div>
+        <a href="Accueil.php"><-Retour</a>
+        </div>
+    </header>
+    
 <body>
-  <div class="container">
-     <div class="left">  
-     <h3>Veillez choisir un taxi</h3>
-     
-     <div class="right">
-         <img src="c:\Users\aliou\OneDrive\Pictures\freepik__the-style-is-candid-image-photography-with-natural__98854.png" alt="Taxi sur une carte">
-     </div>
-   </div>
+
+    <div class="main">
+        <div class="left-panel">
+            <h2>Veuillez choisir un taxi :</h2>
+            <div class="option">15$ à 1mn</div>
+            <div class="option">30$ à 5mn - Taxi express</div>
+        </div>
+        <div class="right-panel">
+            <img src="c:/Users/aliou/OneDrive/Pictures/freepik__the-style-is-candid-image-photography-with-natural__98854.png" alt="Taxi sur une carte">
+        </div>
+    </div>
+
 </body>
 </html>

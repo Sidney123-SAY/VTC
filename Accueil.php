@@ -9,12 +9,12 @@
 <header>
     <div class="logo">ASIH</div>
     <nav>
-      <a href="#">Taxi</a>
+      <a href="Taxi.php">Taxi</a>
       <a href="#">Covoiturage</a>
     </nav>
     <div class="right-menu">
       <button class="lang">🌍 FR</button>
-      <a href="#">FAQ</a>
+      <a href="FAQ.php">FAQ</a>
       <a href="login.php">Se connecter</a>
       <a href="login.php"class="signup">S’inscrire</a>
     </div>
