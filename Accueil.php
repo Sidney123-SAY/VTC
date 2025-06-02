@@ -6,12 +6,20 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<body>
+  <style>
+    #book-now{
+      background: #f5d77a;
+      padding: 10px 20px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 20px;
+      text-decoration: none;
+      color: black
+    }
+  </style>
 <header>
     <div class="logo">ASIH</div>
-    <nav>
-      <a href="Taxi.php">Taxi</a>
-      <a href="#">Covoiturage</a>
-    </nav>
     <div class="right-menu">
       <button class="lang">🌍 FR</button>
       <a href="FAQ.php">FAQ</a>
@@ -24,8 +32,7 @@
     <section class="intro">
       <div class="text-block">
         <h1>L’excellence vous accompagne à chaque trajet,<br> pour une expérience inoubliable</h1>
-        <button class="reserve">Réserver maintenant</button>
-
+        <a id="book-now" href="choix.php">Réserver maintenant</a>
         <div class="reasons">
           <h3>Pourquoi nous choisir ?</h3>
           <ul>
