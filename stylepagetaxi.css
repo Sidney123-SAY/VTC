@@ -39,7 +39,7 @@ header {
 
 form input {
   display: block;
-  width: 100%;
+  width: 50px;
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ccc;

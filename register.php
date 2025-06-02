@@ -156,7 +156,7 @@
                 <label>Nom Prénom :</label>
                 <input type="text" name="identifiant" required>
                 <label>Mot de passe :</label>
-                <input type="password" name="motdepasse" required>
+                <input type="password" name="motdepasse" required>git
                 <button type="submit" class="btn-yellow">Connexion</button>
             </form>
         </section>
