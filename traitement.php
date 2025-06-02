@@ -37,7 +37,7 @@ if (isset($_POST['verifier'])) {
 
     // Insertion
     $stmt = $conn->prepare("INSERT INTO chauffeurs (nom, prenom, adresse, date_naissance, telephone, email, mot_de_passe, permis)
-                            VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
     $stmt->execute([$nom, $prenom, $adresse, $naissance, $telephone, $email, $motdepasse, $permisPath]);
     echo "Inscription réussie.";
 }
