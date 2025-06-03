@@ -1,10 +1,13 @@
-body { 
- font-family: Arial, sans-serif;
- margin: 10px;
- padding: 10px;
- background: #f4f4f4;
-
+body {
+  background-image: url('https://www.izidrive.io/wp-content/uploads/2023/08/taxi-nuit.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color:white;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 
 header {
   display: flex;
@@ -46,9 +49,6 @@ form input {
   border-radius: 5px;
 }
 
-
-
-
 form input {
  display: block;
  width: 180px;
@@ -69,8 +69,6 @@ form input {
   font-weight: bold;
 }
 
-
-
 .left {
   flex: 1px;
   max-width: 500px;
@@ -81,30 +79,15 @@ form input {
   margin-bottom: 20px;
 }
 
-
-
-
 .right{
     flex: 1;
     text-align:right;
 }
 
-.right img{
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-
 explore {
  font-size: 1em;
  margin-bottom: 20px;
  color: #555;
-}
-
-.image-block img{
-  width: 400px;
-  height: auto;
 }
 
 body {

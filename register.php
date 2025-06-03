@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DEnregistrement Chauffeurs</title>
+    <title>Enregistrement Chauffeurs</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -151,7 +151,7 @@
             </form>
         </section>
         <section class="right-form">
-            <form action="connexion.php" method="POST">
+            <form action="createtrajet.php" method="POST">
                 <p><strong>Vous êtes déjà enregistré en tant que chauffeur ?<br>Connectez-vous à votre compte</strong></p>
                 <label>Nom Prénom :</label>
                 <input type="text" name="identifiant" required>

@@ -5,12 +5,16 @@
     <title>Commande de Taxi</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f7f7f7;
-        }
+       body {
+  background-image: url('https://www.izidrive.io/wp-content/uploads/2023/08/taxi-nuit.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color:white;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 
         header {
             background: black;
