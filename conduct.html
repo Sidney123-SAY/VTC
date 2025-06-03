@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Inscription Conducteur</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      background-image: url('https://www.izidrive.io/wp-content/uploads/2023/08/taxi-nuit.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: -1;
+    }
+
+    .header-text {
+      text-align: center;
+      font-size: 16px;
+      padding: 20px;
+      font-weight: bold;
+      background-color: rgba(255, 255, 255, 0.1);
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding: 40px;
+      flex-wrap: wrap;
+    }
+
+    .form-section, .login-section {
+      background: rgba(255, 255, 255, 0.9);
+      color: black;
+      padding: 30px;
+      border-radius: 10px;
+      width: 45%;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      margin: 10px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"],
+    input[type="tel"],
+    input[type="file"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .file-area {
+      background: #eee;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .warning {
+      color: red;
+      font-size: 0.9em;
+      margin-top: 5px;
+    }
+
+    button {
+      background-color: #f5d77a;
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      font-weight: bold;
+      width: 100%;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #e6c865;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .form-section, .login-section {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header-text">
+    Afin de pouvoir proposer vos services en tant que conducteur de covoiturage, il est nécessaire de vous enregistrer en tant que chauffeur.<br>
+    Cette étape nous permet de vérifier vos informations et de garantir la sécurité de nos passagers.
+  </div>
+
+  <div class="container">
+    <div class="form-section">
+      <h2>Inscription Conducteur</h2>
+
+      <form action="registerconduct.php" method="POST" enctype="multipart/form-data">
+        <label>Nom :</label>
+        <input type="text" name="nom" required>
+
+        <label>Prénom :</label>
+        <input type="text" name="prenom" required>
+
+        <label>Adresse :</label>
+        <input type="text" name="adresse" required>
+
+        <label>Date de naissance :</label>
+        <input type="date" name="naissance" required>
+
+        <label>Numéro de téléphone :</label>
+        <input type="tel" name="telephone" placeholder="+33..." required>
+
+        <label>Adresse mail :</label>
+        <input type="email" name="email" required>
+
+        <label>Mot de passe :</label>
+        <input type="password" name="password" required>
+
+        <label>Permis de conduire :</label>
+        <div class="file-area">
+          <input type="file" name="permis" required>
+          <p class="warning">ATTENTION!!! Le fichier ne doit pas dépasser 10 Mo</p>
+        </div>
+
+        <button type="submit" name="register">Vérification</button>
+      </form>
+    </div>
+    
+    <div class="login-section">
+      <h2>Déjà enregistré ?</h2>
+      <p>Vous êtes déjà enregistré en tant que chauffeur ?<br> Connectez-vous à votre compte</p>
+      <a href="login.php">
+        <button>Connexion</button>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>

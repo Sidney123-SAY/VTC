@@ -15,15 +15,17 @@
  <div class="container"> 
      <div class="left">
      <h3>Commandez ou planifiez un taxi</h3>
-       <form action="footer.php" method="POST">
-         <input type="text" name="depart" placeholder="Lieu de départ" required>
-         <input type="text" name="Destination" placeholder="destination" required>
-          <button type="submit">voir prix</button>
-       </form>
+       
+     <form action="Voirprix.php" method="post">
+       <input type="text" name="depart" placeholder="Lieu de départ" required>
+       <input type="text" name="destination" placeholder="Destination" required>
+       <button type="submit" class="voir-prix">Voir prix</button>
+      </form>
+
      </div>
        <div class="right">
          <p class="explore">Explorer d'autres moyens de transports</p>
-         <img src="C:\Users\aliou\OneDrive\Pictures\Travel like a VIP in Detroit – experience the excellence of VIP RideWay chauffeur services!.jpeg" alt="chauffeur taxi avec Client">
+         <img src="C:\xampp\htdocs\VTC\images\Travel like a VIP in Detroit – experience the excellence of VIP RideWay chauffeur services!.jpg" alt="taxi">
         </div> 
  </div>
 

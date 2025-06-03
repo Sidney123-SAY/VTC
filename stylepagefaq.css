@@ -1,0 +1,116 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1c1c1c;
+  color: white;
+  padding: 10px 30px;
+}
+
+.faq-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.faq-container h1 {
+    text-align: center;
+    color: #f1c40f;
+    margin-bottom: 40px;
+}
+
+.faq-item {
+    margin-bottom: 30px;
+}
+
+.faq-item h2 {
+    color: #2c3e50;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.faq-item p,
+.faq-item ul {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.faq-item ul {
+    padding-left: 20px;
+}
+
+a {
+    color: #2980b9;
+    text-decoration: none;
+}
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: url('https://www.izidrive.io/wp-content/uploads/2023/08/taxi-nuit.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+  }
+
+  .faq-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: 80px auto;
+  }
+
+  h1, h2 {
+    color: #f5d77a;
+  }
+
+  a {
+    color: #f5d77a;
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f5d77a;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+  }
+
+  nav a, .right-menu a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+  }
+
+  .signup {
+    background: #f5d77a;
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: black !important;
+    font-weight: bold;
+  }
+
+  .faq-item {
+    margin-bottom: 30px;
+  }
