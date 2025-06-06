@@ -25,7 +25,7 @@
       <button class="lang">🌍 FR</button>
       <a href="FAQ.php">FAQ</a>
       <a href="login.php">Se connecter</a>
-      <a href="login.php" class="signup">S’inscrire</a>
+      <a href="register.php" class="signup">S’inscrire</a>
     </div>
   </header>
 

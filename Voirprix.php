@@ -2,19 +2,19 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Commande de Taxi</title>
+    <title>Commande de Taxi - ASIH VTC</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- Si tu en utilises un -->
     <style>
-       body {
-  background-image: url('https://www.izidrive.io/wp-content/uploads/2023/08/taxi-nuit.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  color:white;
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
+        body {
+            background-image: url('https://www.izidrive.io/wp-content/uploads/2023/08/taxi-nuit.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
         header {
             background: black;
@@ -26,93 +26,74 @@
         }
 
         .logo {
-            font-size: 20px;
+            font-size: 24px;
             font-weight: bold;
         }
 
-        header a {
+        .right-menu a, .right-menu button {
             color: white;
             text-decoration: none;
+            margin-left: 15px;
             font-weight: bold;
+            background: none;
+            border: none;
+            cursor: pointer;
         }
 
         .main {
-            display: flex;
-            justify-content: space-between;
             padding: 40px;
-            flex-wrap: wrap;
+            max-width: 900px;
+            margin: auto;
         }
 
-        .left-panel {
-            flex: 1;
-            max-width: 50%;
-        }
-
-        .left-panel h2 {
-            margin-bottom: 20px;
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
         }
 
         .option {
-            background-color: #e0e0e0;
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: black;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
             font-weight: bold;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s ease;
         }
 
         .option:hover {
-            background-color: #c0dfff;
-        }
-
-        .right-panel {
-            flex: 1;
-            max-width: 45%;
-            text-align: center;
-        }
-
-        .right-panel img {
-            max-width: 100%;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            background-color: #ffe08a;
         }
 
         @media (max-width: 768px) {
             .main {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .left-panel, .right-panel {
-                max-width: 100%;
-            }
-
-            .right-panel {
-                margin-top: 20px;
+                padding: 20px;
             }
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="logo">ASIH</div>
-        <a href="Accueil.php">&larr; Retour</a>
-    </header>
-
-    <div class="main">
-        <div class="left-panel">
-            <h2>Veuillez choisir un taxi :</h2>
-            <div class="option">15€ à 1 min</div>
-            <div class="option">30€ à 5 min - Taxi express</div>
-        </div>
-
-        <div class="right-panel">
-            <img src="images/taxi-carte.png" alt="Taxi sur une carte">
-        </div>
+<header>
+    <div class="logo">ASIH</div>
+    <div class="right-menu">
+        <button class="lang">🌍 FR</button>
+        <a href="FAQ.php">FAQ</a>
+        <a href="login.php">Se connecter</a>
+        <a href="register.php" class="signup">S’inscrire</a>
     </div>
+</header>
+
+<div class="main">
+    <h2>Choisissez votre taxi</h2>
+
+    <!-- Prix fictifs avec temps estimé -->
+    <div class="option">🚕 12 € — à 2 min (Standard)</div>
+    <div class="option">🚖 22 € — à 4 min (Confort)</div>
+    <div class="option">🚗 35 € — à 6 min (Van ou Famille)</div>
+    <div class="option">🚕 45 € — à 10 min (Taxi VIP)</div>
+</div>
 
 </body>
 </html>
-

@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Choisissez une option</title>
-    
+    <link rel="stylesheet" href="style.css">
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -25,34 +26,28 @@
             z-index: -1;
         }
 
-        .navbar {
-            background-color: rgba(0, 0, 0, 0.8);
-            padding: 10px;
+        header {
+            background: black;
+            color: white;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 15px 20px;
         }
 
-        .navbar-left, .navbar-right {
-            display: flex;
-            align-items: center;
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
         }
 
-        .navbar-left span, .navbar-right button {
-            margin: 0 5px;
-        }
-
-        .navbar button {
-            padding: 8px 12px;
-            border: none;
-            border-radius: 5px;
-            background-color: #444;
+        .right-menu a, .right-menu button {
             color: white;
+            text-decoration: none;
+            margin-left: 15px;
+            font-weight: bold;
+            background: none;
+            border: none;
             cursor: pointer;
-        }
-
-        .navbar .active {
-            background-color: orange;
         }
 
         h2 {
@@ -109,31 +104,30 @@
 </head>
 <body>
 
-    <div class="navbar">
-        <div class="navbar-left">
-            <span>"logo" alt="Logo ASIH" height="30"></span>
-        </div>
-        <div class="navbar-right">
-            <button>🌐 FR</button>
-          <a href="FAQ.php">FAQ</a>
-        </div>
+<header>
+    <div class="logo">ASIH</div>
+    <div class="right-menu">
+        <button class="lang">🌍 FR</button>
+        <a href="FAQ.php">FAQ</a>
+        <a href="login.php">Se connecter</a>
+        <a href="register.php" class="signup">S’inscrire</a>
     </div>
+</header>
 
-    <h2>CHOISISSEZ UNE OPTION</h2>
-    <div class="warning">
-        Attention !!!
-        <small>Pour être conducteur, vous devez obligatoirement avoir le permis et posséder un véhicule en règle.</small>
-    </div>
+<h2>CHOISISSEZ UNE OPTION</h2>
+<div class="warning">
+    Attention !!!
+    <small>Pour être conducteur, vous devez obligatoirement avoir le permis et posséder un véhicule en règle.</small>
+</div>
 
-    <div class="options">
-        <div class="option">
-            <a href="Taxi.php">Taxi</a>
-        </div>
-        <div class="option">
-            <a href="choix.php">Covoiturage</a>
-        </div>
+<div class="options">
+    <div class="option">
+        <a href="Taxi.php">Taxi</a>
     </div>
+    <div class="option">
+        <a href="choix.php">Covoiturage</a>
+    </div>
+</div>
 
 </body>
 </html>
-

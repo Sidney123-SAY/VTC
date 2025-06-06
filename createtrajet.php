@@ -5,6 +5,27 @@ if (!isset($_SESSION['conducteur_enregistre']) || $_SESSION['conducteur_enregist
     header("Location: registerconduct.php");
     exit();
 }
+// Connexion à la base
+$pdo = new PDO('mysql:host=localhost;dbname=covoiturage;charset=utf8', 'root', '');
+
+// Traitement du formulaire
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $depart   = $_POST['depart'] ?? '';
+    $arrivee  = $_POST['arrivee'] ?? '';
+    $type     = $_POST['type'] ?? '';
+    $date     = $_POST['date'] ?? '';
+    $chauffeur_id = $_SESSION['chauffeur_id'];
+
+    if ($depart && $arrivee && $type && $date) {
+        $stmt = $pdo->prepare("INSERT INTO trajets (chauffeur_id, depart, arrivee, type, date)
+        VALUES (?, ?, ?, ?, ?)");
+        $stmt->execute([$chauffeur_id, $depart, $arrivee, $type, $date]);
+
+        echo "<p style='color: green;'>Trajet enregistré avec succès !</p>";
+    } else {
+        echo "<p style='color: red;'>Veuillez remplir tous les champs.</p>";
+    }
+}
 ?>
 
 <!DOCTYPE html>
