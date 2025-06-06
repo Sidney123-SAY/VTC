@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taxi</title>
     <link rel="stylesheet" href="stylepagetaxi.css">
-    <link rel="stylesheet" href="style.css"> 
 </head>
     <header>
     <button class="logo">ASIH</button>
@@ -26,6 +25,7 @@
      </div>
        <div class="right">
          <p class="explore">Explorer d'autres moyens de transports</p>
+         <img src="C:\xampp\htdocs\VTC\images\Travel like a VIP in Detroit – experience the excellence of VIP RideWay chauffeur services!.jpg" alt="taxi">
         </div> 
  </div>
 
