@@ -54,6 +54,10 @@ if (isset($_POST['connexion'])) {
     if ($chauffeur && password_verify($motdepasse, $chauffeur['mot_de_passe'])) {
         echo "Connexion réussie. Bienvenue, " . htmlspecialchars($chauffeur['prenom']) . " !";
         // Redirection ou session ici
+        session_start();
+        $_SESSION['conducteur_enregistre'] = true;
+        $_SESSION['chauffeur_id'] = $chauffeur['id'];
+        header("Location: createtrajet.php");
     } else {
         echo "Email ou mot de passe incorrect.";
     }
