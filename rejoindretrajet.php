@@ -3,7 +3,7 @@ session_start();
 
 // Rediriger si l'utilisateur n'est pas connecté
 if (!isset($_SESSION['passager_enregistre']) || $_SESSION['passager_enregistre'] !== true) {
-    header("Location: login.php");
+    header("Location: login.html");
     exit();
 }
 
