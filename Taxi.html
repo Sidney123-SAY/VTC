@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Commander un Taxi - ASIH</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('https://www.izidrive.io/wp-content/uploads/2023/08/taxi-nuit.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px;
+        }
+
+        .container h3 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        form {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 10px;
+            border: none;
+            font-size: 16px;
+        }
+
+        .voir-prix {
+            background-color: #f5d77a;
+            color: black;
+            border: none;
+            padding: 12px 20px;
+            font-weight: bold;
+            border-radius: 20px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .voir-prix:hover {
+            background-color: #e6c865;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">ASIH</div>
+    <div class="right-menu">
+        <button>🌍 FR</button>
+        <a href="FAQ.php">FAQ</a>
+        <a href="login.php">Se connecter</a>
+        <a href="register.php" class="signup">S’inscrire</a>
+    </div>
+</header>
+
+<div class="container">
+    <h3>Commandez ou planifiez un taxi</h3>
+    <form action="Voirprix.php" method="post">
+        <input type="text" name="depart" placeholder="Lieu de départ" required>
+        <input type="text" name="destination" placeholder="Destination" required>
+        <button type="submit" class="voir-prix">Voir prix</button>
+    </form>
+</div>
+
+</body>
+</html>
+
+
+    
