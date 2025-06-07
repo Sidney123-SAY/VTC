@@ -99,8 +99,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['trajet_id'])) {
     <div class="logo">ASIH</div>
     <div class="right-menu">
       <button class="lang">🌍 FR</button>
-      <a href="FAQ.php">FAQ</a>
-      <a href="login.php">Se connecter</a>
+      <a href="FAQ.html">FAQ</a>
+      <a href="login.html">Se connecter</a>
       <a href="register.php" class="signup">S’inscrire</a>
     </div>
   </header>
