@@ -82,13 +82,30 @@
     <div class="right-menu">
       <a href="Accueil.html">Accueil</a>
       <a href="FAQ.html">FAQ</a>
-      <a href="login.html">Se connecter</a>
+      <a href="login.php">Se connecter</a>
     </div>
   </header>
 
   <main>
     <h2>Créer un compte utilisateur</h2>
-    <form action="inscription_utilisateur.php" method="POST">
+    <?php if (isset($_GET['erreur'])): ?>
+  <div style="background: #ffdddd; color: red; padding: 10px; margin-bottom: 20px; border-radius: 5px;">
+    <?php
+      switch ($_GET['erreur']) {
+        case 'existe':
+          echo "Un compte avec cette adresse e-mail existe déjà.";
+          break;
+        case 'champs':
+          echo "Veuillez remplir tous les champs obligatoires.";
+          break;
+        default:
+          echo "Une erreur est survenue.";
+      }
+    ?>
+  </div>
+<?php endif; ?>
+
+    <form action="usersconnect.php" method="POST">
       <label for="nom">Nom :</label>
       <input type="text" id="nom" name="nom" required>
 

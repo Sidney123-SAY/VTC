@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : sam. 07 juin 2025 à 13:36
+-- Généré le : mer. 11 juin 2025 à 23:53
 -- Version du serveur : 10.4.32-MariaDB
 -- Version de PHP : 8.0.30
 
@@ -44,7 +44,9 @@ CREATE TABLE `chauffeurs` (
 --
 
 INSERT INTO `chauffeurs` (`nom`, `prenom`, `adresse`, `date_naissance`, `telephone`, `email`, `mot_de_passe`, `permis`, `id`) VALUES
-('Hugo Loik', 'Hugo Loik', '53 boulevard jules ferry', '0000-00-00', '+336250342', 'ekonwahugo54@yahoo.com', '$2y$10$ymO7mWXk.JsXojSl1EKKu.meu5uATArTIhzoNCxf37uLhcNVRD9ge', 'uploads/6842b7fb0dabc.jpg', 1);
+('Hugo Loik', 'Hugo Loik', '53 boulevard jules ferry', '0000-00-00', '+336250342', 'ekonwahugo54@yahoo.com', '$2y$10$ymO7mWXk.JsXojSl1EKKu.meu5uATArTIhzoNCxf37uLhcNVRD9ge', 'uploads/6842b7fb0dabc.jpg', 1),
+('Hugo Loik', 'Hugo Loik', '53 boulevard jules ferry', '0000-00-00', '+336250342', 'ekonwahugo54@yahoo.com', '$2y$10$QLVQi0.fNeu3JNRvzVFW7.dafqO4cwKHX7VI1PlePh2KAGN7./VrO', 'uploads/6849d75b4797d.pdf', 2),
+('loik', 'Hugo ', '53 boulevard jules ferry', '0000-00-00', '+336250342', 'ekonwahugo54@yahoo.comm', '$2y$10$muWMQ7LgakFNzmKh/Mje0emY.xjSKHSN/T7fljZTsr.e2q1NMi7Cm', 'uploads/6849df8f3522b.pdf', 3);
 
 -- --------------------------------------------------------
 
@@ -70,10 +72,18 @@ CREATE TABLE `trajets` (
 CREATE TABLE `utilisateurs` (
   `nom` varchar(100) NOT NULL,
   `prenom` varchar(100) NOT NULL,
-  `identifiant` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
   `mot_de_passe` varchar(255) NOT NULL,
-  `telephone` varchar(30) NOT NULL
+  `telephone` varchar(30) NOT NULL,
+  `email` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Déchargement des données de la table `utilisateurs`
+--
+
+INSERT INTO `utilisateurs` (`nom`, `prenom`, `id`, `mot_de_passe`, `telephone`, `email`) VALUES
+('Ekonwa', 'Hugo Loik', 1, '$2y$10$O2k2moGvFYAAFjD.udd6FOW0538pVX/z8r9xzqMM8TjIGoHQezl2K', '0625034297', 'ekonwahugo54@yahoo.com');
 
 --
 -- Index pour les tables déchargées
@@ -96,7 +106,7 @@ ALTER TABLE `trajets`
 -- Index pour la table `utilisateurs`
 --
 ALTER TABLE `utilisateurs`
-  ADD PRIMARY KEY (`identifiant`);
+  ADD PRIMARY KEY (`id`) USING BTREE;
 
 --
 -- AUTO_INCREMENT pour les tables déchargées
@@ -106,7 +116,7 @@ ALTER TABLE `utilisateurs`
 -- AUTO_INCREMENT pour la table `chauffeurs`
 --
 ALTER TABLE `chauffeurs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT pour la table `trajets`
@@ -118,7 +128,7 @@ ALTER TABLE `trajets`
 -- AUTO_INCREMENT pour la table `utilisateurs`
 --
 ALTER TABLE `utilisateurs`
-  MODIFY `identifiant` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Contraintes pour les tables déchargées

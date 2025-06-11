@@ -2,7 +2,7 @@
 session_start();
 // Vérification d'accès
 if (!isset($_SESSION['conducteur_enregistre']) || $_SESSION['conducteur_enregistre'] !== true) {
-    header("Location: registerconduct.php");
+    header("Location: traitement.php");
     exit();
 }
 // Connexion à la base

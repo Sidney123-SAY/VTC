@@ -3,7 +3,7 @@ session_start();
 
 // Rediriger si l'utilisateur n'est pas connecté
 if (!isset($_SESSION['passager_enregistre']) || $_SESSION['passager_enregistre'] !== true) {
-    header("Location: login.html");
+    header("Location: login.php");
     exit();
 }
 
@@ -68,7 +68,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['trajet_id'])) {
       background-color: #f5d77a;
     }
     tr:hover {
-      background-color: #f1f1f1;
+      background-color:black;
     }
     h2 {
       text-align: center;
@@ -90,7 +90,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['trajet_id'])) {
       margin-top: 20px;
       font-weight: bold;
       font-size: 1.1em;
-      color: #333;
+      color: green;
     }
   </style>
 </head>
